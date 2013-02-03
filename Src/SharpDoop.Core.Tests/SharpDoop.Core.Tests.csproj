@@ -45,7 +45,8 @@
     </CodeAnalysisDependentAssemblyPaths>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ContextTests.cs" />
+    <Compile Include="ReduceContextTests.cs" />
+    <Compile Include="MapContextTests.cs" />
     <Compile Include="JobTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

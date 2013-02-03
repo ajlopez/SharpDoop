@@ -19,21 +19,20 @@
 
             Assert.IsNotNull(result);
             Assert.AreEqual(3, result.Keys.Count);
-            Assert.IsTrue(result.Values.All(v => v.Count == 1));
             Assert.IsTrue(result.ContainsKey("a"));
             Assert.IsTrue(result.ContainsKey("word"));
             Assert.IsTrue(result.ContainsKey("is"));
-            Assert.AreEqual(2, result["a"][0]);
-            Assert.AreEqual(2, result["word"][0]);
-            Assert.AreEqual(1, result["is"][0]);
+            Assert.AreEqual(2, result["a"]);
+            Assert.AreEqual(2, result["word"]);
+            Assert.AreEqual(1, result["is"]);
         }
 
-        private static void Map(int key, string value, Context<string, int> context)
+        private static void Map(int key, string value, MapContext<string, int> context)
         {
             context.Emit(value, 1);
         }
 
-        private static void Reduce(string key, IList<int> values, Context<string, int> context)
+        private static void Reduce(string key, IList<int> values, ReduceContext<string, int> context)
         {
             int total = values.Sum();
 

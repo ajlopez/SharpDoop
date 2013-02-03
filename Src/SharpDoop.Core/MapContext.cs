@@ -5,7 +5,7 @@
     using System.Linq;
     using System.Text;
 
-    public class Context<K, V>
+    public class MapContext<K, V>
     {
         private IDictionary<K, IList<V>> keyvalues = new Dictionary<K, IList<V>>();
 
