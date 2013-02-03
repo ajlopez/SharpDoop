@@ -29,6 +29,27 @@
         }
 
         [TestMethod]
+        public void RunJobMapValueReduce()
+        {
+            Job<int, string, string, int, string, int> job = new Job<int, string, string, int, string, int>(Map, Reduce);
+            var items = new string[] { "a", "word", "is", "a", "word" };
+
+            foreach (var item in items)
+                job.MapValue(item);
+
+            var result = job.Reduce();
+
+            Assert.IsNotNull(result);
+            Assert.AreEqual(3, result.Keys.Count);
+            Assert.IsTrue(result.ContainsKey("a"));
+            Assert.IsTrue(result.ContainsKey("word"));
+            Assert.IsTrue(result.ContainsKey("is"));
+            Assert.AreEqual(2, result["a"]);
+            Assert.AreEqual(2, result["word"]);
+            Assert.AreEqual(1, result["is"]);
+        }
+
+        [TestMethod]
         public void RunJobTwoMapsAndReduce()
         {
             Job<int, string, string, int, string, int> job = new Job<int, string, string, int, string, int>(Map, Reduce);

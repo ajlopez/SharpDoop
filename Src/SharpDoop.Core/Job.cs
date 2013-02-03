@@ -18,10 +18,20 @@
             this.reduce = reduce;
         }
 
+        public void MapKeyValue(K1 key, V1 value)
+        {
+            map(key, value, this.mapcontext);
+        }
+
+        public void MapValue(V1 value)
+        {
+            map(default(K1), value, this.mapcontext);
+        }
+
         public void Map(IEnumerable<Pair<K1, V1>> keyvalues)
         {
             foreach (var keyvalue in keyvalues)
-                map(keyvalue.Key, keyvalue.Value, this.mapcontext);
+                this.MapKeyValue(keyvalue.Key, keyvalue.Value);
         }
 
         public IDictionary<K3, V3> Reduce()
