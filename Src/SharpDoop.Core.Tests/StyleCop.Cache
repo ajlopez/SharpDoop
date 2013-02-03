@@ -1,0 +1,33 @@
+<stylecopresultscache>
+  <version>10</version>
+  <sourcecode name="AssemblyInfo.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>02/03/2013 17:48:55</timestamp>
+      <milliseconds>258</milliseconds>
+    </settings>
+    <timestamp>02/03/2013 11:06:46</timestamp>
+    <milliseconds>887</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="JobTests.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>02/03/2013 17:48:55</timestamp>
+      <milliseconds>258</milliseconds>
+    </settings>
+    <timestamp>02/03/2013 17:49:10</timestamp>
+    <milliseconds>791</milliseconds>
+    <violations />
+  </sourcecode>
+  <project key="-811889237">
+    <configuration>DEBUG;TRACE</configuration>
+  </project>
+  <sourcecode name="ContextTests.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>02/03/2013 17:48:55</timestamp>
+      <milliseconds>258</milliseconds>
+    </settings>
+    <timestamp>02/03/2013 17:49:19</timestamp>
+    <milliseconds>9</milliseconds>
+    <violations />
+  </sourcecode>
+</stylecopresultscache>
