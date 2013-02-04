@@ -7,16 +7,13 @@
 
     public class ReduceContext<K, V>
     {
-        private IDictionary<K, V> keyvalues = new Dictionary<K, V>();
+        private IList<Pair<K, V>> pairs = new List<Pair<K, V>>();
 
-        public IDictionary<K, V> KeyValues { get { return this.keyvalues; } }
+        public IEnumerable<Pair<K, V>> Pairs { get { return this.pairs; } }
 
         public void Emit(K key, V value)
         {
-            if (this.keyvalues.ContainsKey(key))
-                throw new InvalidOperationException(string.Format("Key '{0}' already exists", key.ToString()));
-
-            this.keyvalues[key] = value;
+            this.pairs.Add(new Pair<K, V>() { Key = key, Value = value });
         }
     }
 }

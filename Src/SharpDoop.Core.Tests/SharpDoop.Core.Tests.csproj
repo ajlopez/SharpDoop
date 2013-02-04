@@ -47,7 +47,7 @@
   <ItemGroup>
     <Compile Include="ReduceContextTests.cs" />
     <Compile Include="MapContextTests.cs" />
-    <Compile Include="JobTests.cs" />
+    <Compile Include="MapReduceJobTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

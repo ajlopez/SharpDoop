@@ -42,7 +42,7 @@
   <ItemGroup>
     <Compile Include="ReduceContext.cs" />
     <Compile Include="MapContext.cs" />
-    <Compile Include="Job.cs" />
+    <Compile Include="MapReduceJob.cs" />
     <Compile Include="Pair.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -14,8 +14,8 @@
         {
             ReduceContext<string, int> context = new ReduceContext<string, int>();
 
-            Assert.IsNotNull(context.KeyValues);
-            Assert.AreEqual(0, context.KeyValues.Keys.Count);
+            Assert.IsNotNull(context.Pairs);
+            Assert.AreEqual(0, context.Pairs.Count());
         }
 
         [TestMethod]
@@ -25,11 +25,13 @@
 
             context.Emit("word", 1);
 
-            Assert.IsNotNull(context.KeyValues);
-            Assert.AreEqual(1, context.KeyValues.Keys.Count);
-            Assert.IsTrue(context.KeyValues.ContainsKey("word"));
-            Assert.IsNotNull(context.KeyValues["word"]);
-            Assert.AreEqual(1, context.KeyValues["word"]);
+            Assert.IsNotNull(context.Pairs);
+            Assert.AreEqual(1, context.Pairs.Count());
+
+            var pair = context.Pairs.First();
+            Assert.IsNotNull(pair);
+            Assert.AreEqual("word", pair.Key);
+            Assert.AreEqual(1, pair.Value);
         }
 
         [TestMethod]
@@ -41,32 +43,20 @@
             context.Emit("word", 2);
             context.Emit("is", 1);
 
-            Assert.IsNotNull(context.KeyValues);
-            Assert.AreEqual(3, context.KeyValues.Keys.Count);
+            Assert.IsNotNull(context.Pairs);
+            Assert.AreEqual(3, context.Pairs.Count());
 
-            Assert.IsTrue(context.KeyValues.ContainsKey("word"));
-            Assert.IsNotNull(context.KeyValues["word"]);
-            Assert.AreEqual(2, context.KeyValues["word"]);
+            var pair1 = context.Pairs.FirstOrDefault(p => p.Key == "word");
+            Assert.IsNotNull(pair1);
+            Assert.AreEqual(2, pair1.Value);
 
-            Assert.IsTrue(context.KeyValues.ContainsKey("a"));
-            Assert.IsNotNull(context.KeyValues["a"]);
-            Assert.AreEqual(2, context.KeyValues["a"]);
+            var pair2 = context.Pairs.FirstOrDefault(p => p.Key == "a");
+            Assert.IsNotNull(pair2);
+            Assert.AreEqual(2, pair2.Value);
 
-            Assert.IsTrue(context.KeyValues.ContainsKey("is"));
-            Assert.IsNotNull(context.KeyValues["is"]);
-            Assert.AreEqual(1, context.KeyValues["is"]);
-        }
-
-        [TestMethod]
-        [ExpectedException(typeof(InvalidOperationException))]
-        public void RaiseIfDuplicatedKey()
-        {
-            ReduceContext<string, int> context = new ReduceContext<string, int>();
-
-            context.Emit("a", 2);
-            context.Emit("word", 2);
-            context.Emit("is", 1);
-            context.Emit("a", 1);
+            var pair3 = context.Pairs.FirstOrDefault(p => p.Key == "is");
+            Assert.IsNotNull(pair3);
+            Assert.AreEqual(1, pair3.Value);
         }
     }
 }
