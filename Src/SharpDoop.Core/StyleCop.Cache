@@ -1,8 +1,5 @@
 <stylecopresultscache>
   <version>10</version>
-  <project key="-1342758398">
-    <configuration>DEBUG;TRACE</configuration>
-  </project>
   <sourcecode name="Context.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
     <settings>
       <timestamp>02/03/2013 12:11:41</timestamp>
@@ -20,5 +17,79 @@
     <timestamp>02/03/2013 11:06:20</timestamp>
     <milliseconds>470</milliseconds>
     <violations />
+  </sourcecode>
+  <sourcecode name="MapProcessContext.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>02/03/2013 12:11:41</timestamp>
+      <milliseconds>102</milliseconds>
+    </settings>
+    <timestamp>02/04/2013 07:55:40</timestamp>
+    <milliseconds>539</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="MapContext.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>02/03/2013 12:11:41</timestamp>
+      <milliseconds>102</milliseconds>
+    </settings>
+    <timestamp>02/03/2013 18:19:30</timestamp>
+    <milliseconds>563</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="Pair.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>02/03/2013 12:11:41</timestamp>
+      <milliseconds>102</milliseconds>
+    </settings>
+    <timestamp>02/03/2013 17:41:09</timestamp>
+    <milliseconds>705</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="ReduceContext.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>02/03/2013 12:11:41</timestamp>
+      <milliseconds>102</milliseconds>
+    </settings>
+    <timestamp>02/04/2013 07:36:25</timestamp>
+    <milliseconds>843</milliseconds>
+    <violations />
+  </sourcecode>
+  <project key="-1342758398">
+    <configuration>DEBUG;TRACE</configuration>
+  </project>
+  <sourcecode name="MapReduceJob.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>02/03/2013 12:11:41</timestamp>
+      <milliseconds>102</milliseconds>
+    </settings>
+    <timestamp>06/30/2014 06:04:17</timestamp>
+    <milliseconds>14</milliseconds>
+    <violations>
+      <violation namespace="Microsoft.StyleCop.CSharp.SpacingRules" rule="CommasMustBeSpacedCorrectly" ruleCheckId="SA1001">
+        <context>Invalid spacing around the comma.</context>
+        <line>8</line>
+        <warning>False</warning>
+      </violation>
+    </violations>
+  </sourcecode>
+  <sourcecode name="MapProcessJob.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>02/03/2013 12:11:41</timestamp>
+      <milliseconds>102</milliseconds>
+    </settings>
+    <timestamp>06/30/2014 06:04:12</timestamp>
+    <milliseconds>886</milliseconds>
+    <violations>
+      <violation namespace="Microsoft.StyleCop.CSharp.SpacingRules" rule="CommasMustBeSpacedCorrectly" ruleCheckId="SA1001">
+        <context>Invalid spacing around the comma.</context>
+        <line>8</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="Microsoft.StyleCop.CSharp.SpacingRules" rule="CodeMustNotContainMultipleWhitespaceInARow" ruleCheckId="SA1025">
+        <context>The code contains multiple spaces in a row. Only one space is needed.</context>
+        <line>19</line>
+        <warning>False</warning>
+      </violation>
+    </violations>
   </sourcecode>
 </stylecopresultscache>

@@ -5,7 +5,7 @@
     using System.Linq;
     using System.Text;
 
-    public class MapProcessJob<K1,V1,K,V,R> where R : new()
+    public class MapProcessJob<K1, V1, K, V, R> where R : new()
     {
         private Action<K1, V1, MapProcessContext<K, V, R>> map;
         private Action<K, V, R> process;
@@ -16,17 +16,17 @@
         {
             this.map = map;
             this.process = process;
-            this.mapcontext =  new MapProcessContext<K, V, R>(this.results, process);
+            this.mapcontext = new MapProcessContext<K, V, R>(this.results, process);
         }
 
         public void MapKeyValue(K1 key, V1 value)
         {
-            map(key, value, this.mapcontext);
+            this.map(key, value, this.mapcontext);
         }
 
         public void MapValue(V1 value)
         {
-            map(default(K1), value, this.mapcontext);
+            this.map(default(K1), value, this.mapcontext);
         }
 
         public void Map(IEnumerable<Pair<K1, V1>> keyvalues)

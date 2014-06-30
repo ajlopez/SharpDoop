@@ -102,9 +102,9 @@
             result.Counter += value;
         }
 
-        class Result
+        private class Result
         {
-            public int Counter;
+            public int Counter { get; set; }
         }
     }
 }
