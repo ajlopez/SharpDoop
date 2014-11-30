@@ -54,42 +54,25 @@
     <milliseconds>843</milliseconds>
     <violations />
   </sourcecode>
-  <project key="-1342758398">
-    <configuration>DEBUG;TRACE</configuration>
-  </project>
-  <sourcecode name="MapReduceJob.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
-    <settings>
-      <timestamp>02/03/2013 12:11:41</timestamp>
-      <milliseconds>102</milliseconds>
-    </settings>
-    <timestamp>06/30/2014 06:04:17</timestamp>
-    <milliseconds>14</milliseconds>
-    <violations>
-      <violation namespace="Microsoft.StyleCop.CSharp.SpacingRules" rule="CommasMustBeSpacedCorrectly" ruleCheckId="SA1001">
-        <context>Invalid spacing around the comma.</context>
-        <line>8</line>
-        <warning>False</warning>
-      </violation>
-    </violations>
-  </sourcecode>
   <sourcecode name="MapProcessJob.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
     <settings>
       <timestamp>02/03/2013 12:11:41</timestamp>
       <milliseconds>102</milliseconds>
     </settings>
-    <timestamp>06/30/2014 06:04:12</timestamp>
-    <milliseconds>886</milliseconds>
-    <violations>
-      <violation namespace="Microsoft.StyleCop.CSharp.SpacingRules" rule="CommasMustBeSpacedCorrectly" ruleCheckId="SA1001">
-        <context>Invalid spacing around the comma.</context>
-        <line>8</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="Microsoft.StyleCop.CSharp.SpacingRules" rule="CodeMustNotContainMultipleWhitespaceInARow" ruleCheckId="SA1025">
-        <context>The code contains multiple spaces in a row. Only one space is needed.</context>
-        <line>19</line>
-        <warning>False</warning>
-      </violation>
-    </violations>
+    <timestamp>06/30/2014 06:04:43</timestamp>
+    <milliseconds>469</milliseconds>
+    <violations />
   </sourcecode>
+  <sourcecode name="MapReduceJob.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>02/03/2013 12:11:41</timestamp>
+      <milliseconds>102</milliseconds>
+    </settings>
+    <timestamp>06/30/2014 06:04:34</timestamp>
+    <milliseconds>228</milliseconds>
+    <violations />
+  </sourcecode>
+  <project key="-1342758398">
+    <configuration>DEBUG;TRACE</configuration>
+  </project>
 </stylecopresultscache>

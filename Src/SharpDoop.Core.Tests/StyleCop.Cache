@@ -54,9 +54,6 @@
     <milliseconds>853</milliseconds>
     <violations />
   </sourcecode>
-  <project key="-811889237">
-    <configuration>DEBUG;TRACE</configuration>
-  </project>
   <sourcecode name="MapProcessJobTests.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
     <settings>
       <timestamp>02/03/2013 17:48:55</timestamp>
@@ -66,4 +63,7 @@
     <milliseconds>224</milliseconds>
     <violations />
   </sourcecode>
+  <project key="-811889237">
+    <configuration>DEBUG;TRACE</configuration>
+  </project>
 </stylecopresultscache>

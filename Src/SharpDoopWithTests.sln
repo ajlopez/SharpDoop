@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpDoop.Core", "SharpDoop.Core\SharpDoop.Core.csproj", "{96D00494-F045-4019-BEE6-CC6CDA5FBF68}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpDoop.Core.Tests", "SharpDoop.Core.Tests\SharpDoop.Core.Tests.csproj", "{4E74163D-A44C-4A70-BA0D-7205013B8E4F}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B6218DA2-1527-45B8-B94C-EA0A7C411DD4}"
 	ProjectSection(SolutionItems) = preProject
 		Local.testsettings = Local.testsettings
@@ -23,6 +25,10 @@ Global
 		{96D00494-F045-4019-BEE6-CC6CDA5FBF68}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96D00494-F045-4019-BEE6-CC6CDA5FBF68}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96D00494-F045-4019-BEE6-CC6CDA5FBF68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E74163D-A44C-4A70-BA0D-7205013B8E4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E74163D-A44C-4A70-BA0D-7205013B8E4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E74163D-A44C-4A70-BA0D-7205013B8E4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E74163D-A44C-4A70-BA0D-7205013B8E4F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
